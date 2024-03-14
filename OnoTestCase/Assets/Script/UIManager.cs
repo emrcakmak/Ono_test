@@ -52,13 +52,18 @@ public class UIManager : MonoBehaviour
             Debug.Log("girdi");
             for (int i = 0; i <= 5; i++)
             {
-                float randomNumber = Random.Range(450f, 550f);
-                Ocak_sýcaklýðý.text = randomNumber.ToString();
-                Ocak_aðýrlýðý.text = randomNumber.ToString();
-                üsrt_kalýp_sýcaklýðý.text = randomNumber.ToString();
-                Alt_kalýp_sýcaklýðý.text = randomNumber.ToString();
-                Ývme.text = randomNumber.ToString();
-                Basýnç.text = randomNumber.ToString();
+                int Ocaksýcaklýðý_num = Random.Range(450, 550);
+                int OcakAgýrlýgý_num = Random.Range(750, 850);
+                int UstKalýpsýcaklýðý_num = Random.Range(20, 30);
+                int AltKalýpsýcaklýðý_num = Random.Range(10, 20); 
+                float ivme_num = (float)System.Math.Round(Random.Range(0.10f, 0.20f), 2);
+                float basýnç_num = (float)System.Math.Round(Random.Range(0.200f, 0.300f), 3);
+                Ocak_sýcaklýðý.text = Ocaksýcaklýðý_num.ToString();
+                Ocak_aðýrlýðý.text = OcakAgýrlýgý_num.ToString();
+                üsrt_kalýp_sýcaklýðý.text = UstKalýpsýcaklýðý_num.ToString();
+                Alt_kalýp_sýcaklýðý.text = AltKalýpsýcaklýðý_num.ToString();
+                Ývme.text = ivme_num.ToString();
+                Basýnç.text = basýnç_num.ToString();
                
 
 
